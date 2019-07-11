@@ -1,0 +1,21 @@
+{% extends 'form_multi.html' %}
+
+
+{% block result %}
+<table>
+  <tr>
+    <th>input</th>
+    <td>{{ input_str }}</td>
+  </tr>
+</table>
+<br>
+<table>
+	<caption>system outputs</caption>
+  {% for key, value in result.items() %}
+  <tr>
+    <th> {{ key }} </th>
+    <td> {{ value }} </td>
+  </tr>
+    {% endfor %}
+</table>
+{% endblock %}

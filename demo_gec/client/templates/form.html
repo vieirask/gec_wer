@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block form %}
+    <form action="" method="POST">
+        <div class="form">
+            <label for="input_str">
+                Please enter an ungrammatical sentence :
+            </label>
+            <br>
+            <input style="width: 400px;height: 20px;" type="text" size="60" name="input_str" id="input_str" required>
+            <br>
+            <input type="submit" value="Correction!" style="width:100px;height:50px">
+        </div>
+    </form>
+{% endblock %}
+
+{% block result %}
+{% endblock %}
